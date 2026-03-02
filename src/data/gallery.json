@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "src": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    "alt": "Maquillaje profesional para evento",
+    "category": "maquillaje",
+    "size": "tall",
+    "is_visible": true
+  },
+  {
+    "id": 2,
+    "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    "alt": "Interior del estudio de belleza",
+    "category": "espacio",
+    "size": "short",
+    "is_visible": true
+  },
+  {
+    "id": 3,
+    "src": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    "alt": "Resultado de diseño de cejas",
+    "category": "cejas",
+    "size": "tall",
+    "is_visible": true
+  },
+  {
+    "id": 4,
+    "src": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    "alt": "Maquillaje para sesión fotográfica",
+    "category": "maquillaje",
+    "size": "short",
+    "is_visible": true
+  },
+  {
+    "id": 5,
+    "src": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    "alt": "Tratamiento de belleza profesional",
+    "category": "cejas",
+    "size": "tall",
+    "is_visible": true
+  },
+  {
+    "id": 6,
+    "src": "https://images.unsplash.com/photo-1521590832167-7228f5cf279c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+    "alt": "Productos y herramientas del estudio",
+    "category": "espacio",
+    "size": "short",
+    "is_visible": true
+  }
+]

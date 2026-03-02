@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "stars": 5,
+    "quote": "Excelente servicio, muy profesional y el resultado fue increíble. Salí encantada y todas me preguntaron dónde me había arreglado.",
+    "name": "María García",
+    "role": "Cliente frecuente"
+  },
+  {
+    "id": 2,
+    "stars": 5,
+    "quote": "El mejor lugar para diseño de cejas en Milpa Alta. La técnica con hilo es increíble, se nota que son profesionales.",
+    "name": "Ana López",
+    "role": "Primera visita"
+  },
+  {
+    "id": 3,
+    "stars": 5,
+    "quote": "Me encantó el maquillaje para mi graduación. Quedé perfecta en todas las fotos. Definitivamente regresaré.",
+    "name": "Daniela Martínez",
+    "role": "Evento especial"
+  }
+]

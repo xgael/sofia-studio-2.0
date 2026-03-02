@@ -1,0 +1,9 @@
+{
+  "badge": "ESTÉTICA PROFESIONAL EN MILPA ALTA",
+  "titleLine1": "Tu espacio de",
+  "titleLine2": "belleza y bienestar",
+  "description": "Descubre un ambiente cálido y profesional donde cada detalle está pensado para realzar tu belleza natural.",
+  "ctaPrimary": { "text": "Reserva tu Cita", "link": "#reservar" },
+  "ctaSecondary": { "text": "Conoce más", "link": "#nosotros" },
+  "image": "https://images.unsplash.com/flagged/photo-1573470176607-59a085303294?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+}

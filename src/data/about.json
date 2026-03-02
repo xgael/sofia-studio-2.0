@@ -1,0 +1,11 @@
+{
+  "tag": "SOBRE NOSOTROS",
+  "title": "Pasión por realzar\ntu belleza natural",
+  "description": "Sofia Studio 2.0 nació de la pasión por realzar la belleza natural de cada persona. En nuestro espacio en Milpa Alta, CDMX, ofrecemos un ambiente cálido y profesional donde cada cliente se siente única y especial.\n\nCon más de 3 años de experiencia y cientos de clientes satisfechas, nos hemos convertido en el destino de belleza preferido de la zona.",
+  "image": "https://images.unsplash.com/photo-1695527081901-b2dd7452cdcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  "stats": [
+    { "value": 150, "suffix": "+", "label": "Clientes" },
+    { "value": 3, "suffix": "+", "label": "Años" },
+    { "value": 5.0, "suffix": " ★", "label": "Rating", "decimals": 1 }
+  ]
+}

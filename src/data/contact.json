@@ -1,0 +1,20 @@
+{
+  "phone": "+52 55 4717 6847",
+  "whatsapp": "5554717847",
+  "address": {
+    "street": "Sonora Sur 51",
+    "area": "Villa Milpa Alta, Los Ángeles",
+    "city": "Milpa Alta, 12500, CDMX"
+  },
+  "hours": [
+    { "days": "Lun – Vie", "time": "11:00 AM – 7:00 PM" },
+    { "days": "Sábado", "time": "10:00 AM – 5:00 PM" },
+    { "days": "Domingo", "time": "Cerrado" }
+  ],
+  "social": {
+    "instagram": "https://www.instagram.com/sofiastudio2.0/",
+    "facebook": "https://www.facebook.com/p/Sofia-Studio-61556962012180/"
+  },
+  "freshaUrl": "https://www.fresha.com/es/lvp/sofia-studio-2-0-sonora-sur-villa-milpa-alta-Rv5rBA",
+  "googleMapsEmbed": ""
+}

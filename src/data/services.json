@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Diseño de Cejas\ncon Hilo",
+    "description": "Moldeado y diseño profesional de cejas con técnica de hilo para resultados precisos y naturales.",
+    "price": 150,
+    "currency": "MXN",
+    "icon": "scissors",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "name": "Depilación\nProfesional",
+    "description": "Depilación con los mejores productos para una piel suave, cuidada y con resultados duraderos.",
+    "price": 200,
+    "currency": "MXN",
+    "icon": "sparkles",
+    "is_active": true
+  },
+  {
+    "id": 3,
+    "name": "Maquillaje\nProfesional",
+    "description": "Maquillaje para todo tipo de evento: bodas, XV años, graduaciones y sesiones fotográficas.",
+    "price": 500,
+    "currency": "MXN",
+    "icon": "palette",
+    "is_active": true
+  }
+]

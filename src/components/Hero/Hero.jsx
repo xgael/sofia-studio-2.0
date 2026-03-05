@@ -11,12 +11,12 @@ function Hero() {
   useGSAP((gsap) => {
     const tl = gsap.timeline({ delay: 0.3 })
 
-    tl.from(`.${styles.badge}`, { y: -20, opacity: 0, duration: 0.5 })
-      .from(`.${styles.titleLine1}`, { y: 60, opacity: 0, duration: 0.8 }, '-=0.2')
-      .from(`.${styles.titleLine2}`, { y: 60, opacity: 0, duration: 0.8 }, '-=0.5')
-      .from(`.${styles.description}`, { y: 30, opacity: 0, duration: 0.6 }, '-=0.4')
-      .from(`.${styles.buttons} > *`, { y: 20, opacity: 0, duration: 0.5, stagger: 0.15 }, '-=0.3')
-      .from(`.${styles.imageWrap}`, { y: 40, opacity: 0, scale: 0.98, duration: 1, ease: 'power2.out' }, '-=0.4')
+    tl.from(`.${styles.badge}`, { y: -20, opacity: 0, duration: 0.5, clearProps: 'opacity,transform' })
+      .from(`.${styles.titleLine1}`, { y: 60, opacity: 0, duration: 0.8, clearProps: 'opacity,transform' }, '-=0.2')
+      .from(`.${styles.titleLine2}`, { y: 60, opacity: 0, duration: 0.8, clearProps: 'opacity,transform' }, '-=0.5')
+      .from(`.${styles.description}`, { y: 30, opacity: 0, duration: 0.6, clearProps: 'opacity,transform' }, '-=0.4')
+      .from(`.${styles.buttons} > *`, { y: 20, opacity: 0, duration: 0.5, stagger: 0.15, clearProps: 'opacity,transform' }, '-=0.3')
+      .from(`.${styles.imageWrap}`, { y: 40, opacity: 0, scale: 0.98, duration: 1, ease: 'power2.out', clearProps: 'opacity,transform' }, '-=0.4')
   }, sectionRef)
 
   return (

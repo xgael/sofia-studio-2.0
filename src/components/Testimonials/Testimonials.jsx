@@ -16,6 +16,7 @@ function Testimonials() {
       duration: 0.7,
       stagger: 0.15,
       ease: 'power3.out',
+      clearProps: 'opacity,transform',
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top 80%',

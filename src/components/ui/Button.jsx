@@ -5,7 +5,7 @@ function Button({ children, variant = 'primary', href, onClick, className = '' }
 
   if (href) {
     return (
-      <a href={href} className={cls} target={href.startsWith('http') ? '_blank' : undefined} rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+      <a href={href} className={cls} onClick={onClick} target={href.startsWith('http') ? '_blank' : undefined} rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}>
         {children}
       </a>
     )

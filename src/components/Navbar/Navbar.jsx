@@ -17,6 +17,16 @@ function Navbar({ theme, onToggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const navRef = useRef(null)
 
+  // Bloquear scroll del body cuando el menú móvil está abierto
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [menuOpen])
+
   useEffect(() => {
     const nav = navRef.current
     if (!nav) return
@@ -56,38 +66,47 @@ function Navbar({ theme, onToggleTheme }) {
   }
 
   return (
-    <nav className={styles.navbar} id="navbar" ref={navRef}>
-      <div className={styles.inner}>
-        <a href="#hero" className={styles.logo} onClick={(e) => handleNavClick(e, '#hero')}>
-          Sofia Studio
-        </a>
+    <>
+      <nav className={styles.navbar} id="navbar" ref={navRef}>
+        <div className={styles.inner}>
+          <a href="#hero" className={styles.logo} onClick={(e) => handleNavClick(e, '#hero')}>
+            Sofia Studio
+          </a>
 
-        <ul className={styles.links}>
-          {NAV_LINKS.map(link => (
-            <li key={link.href}>
-              <a href={link.href} className={styles.link} onClick={(e) => handleNavClick(e, link.href)}>
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+          <ul className={styles.links}>
+            {NAV_LINKS.map(link => (
+              <li key={link.href}>
+                <a href={link.href} className={styles.link} onClick={(e) => handleNavClick(e, link.href)}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        <div className={styles.actions}>
-          <ThemeToggle theme={theme} onToggle={onToggleTheme} />
-          <Button href="#reservar" className={styles.cta}>Reservar</Button>
+          <div className={styles.actions}>
+            <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+            <Button href="#reservar" className={styles.cta} onClick={(e) => handleNavClick(e, '#reservar')}>Reservar</Button>
+          </div>
+
+          <button
+            className={styles.hamburger}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
+          >
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+      </nav>
 
-        <button
-          className={styles.hamburger}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
-        >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
+      {/* Mobile Menu — fuera del nav para evitar el containing block de backdrop-filter */}
       <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ''}`}>
+        <button
+          className={styles.closeBtn}
+          onClick={() => setMenuOpen(false)}
+          aria-label="Cerrar menú"
+        >
+          <X size={24} />
+        </button>
         <ul className={styles.mobileLinks}>
           {NAV_LINKS.map(link => (
             <li key={link.href}>
@@ -99,10 +118,10 @@ function Navbar({ theme, onToggleTheme }) {
         </ul>
         <div className={styles.mobileActions}>
           <ThemeToggle theme={theme} onToggle={onToggleTheme} />
-          <Button href="#reservar" onClick={() => setMenuOpen(false)}>Reservar</Button>
+          <Button href="#reservar" onClick={(e) => handleNavClick(e, '#reservar')}>Reservar</Button>
         </div>
       </div>
-    </nav>
+    </>
   )
 }
 

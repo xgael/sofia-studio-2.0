@@ -22,6 +22,7 @@ function Gallery() {
       duration: 0.8,
       stagger: 0.12,
       ease: 'power2.out',
+      clearProps: 'opacity,transform',
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top 80%',

@@ -3,15 +3,2261 @@
   "children": [
     {
       "type": "frame",
-      "id": "bi8Au",
+      "id": "R16Ba",
+      "x": -600,
+      "y": 0,
+      "name": "Button/Primary",
+      "reusable": true,
+      "fill": "$brand-gold",
+      "cornerRadius": 24,
+      "padding": [
+        16,
+        40
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "zIbFY",
+          "name": "btnPrimaryText",
+          "fill": "$white",
+          "content": "Reserva tu Cita",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "600"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "CWRb3",
+      "x": -600,
+      "y": 80,
+      "name": "Button/Secondary",
+      "reusable": true,
+      "fill": "transparent",
+      "cornerRadius": 24,
+      "stroke": {
+        "thickness": 1.5,
+        "fill": "$brand-gold"
+      },
+      "padding": [
+        16,
+        40
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "E57Si",
+          "name": "btnSecondaryText",
+          "fill": "$brand-gold",
+          "content": "Ver Servicios",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "600"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "E1rED",
+      "x": -600,
+      "y": 200,
+      "name": "SectionTitle",
+      "reusable": true,
+      "layout": "vertical",
+      "gap": 16,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "OhyiH",
+          "name": "titleDeco",
+          "fill": "$brand-gold",
+          "content": "✦",
+          "textAlign": "center",
+          "fontFamily": "DM Sans",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "qInm7",
+          "name": "titleText",
+          "fill": "$text-primary",
+          "content": "Nuestros Servicios",
+          "textAlign": "center",
+          "fontFamily": "Playfair Display",
+          "fontSize": 44,
+          "fontWeight": "600"
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 1,
+          "id": "8zzc2",
+          "name": "titleLine",
+          "fill": "$brand-gold",
+          "width": 60,
+          "height": 2
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "xZrWr",
+      "x": -600,
+      "y": 380,
+      "name": "ServiceCard",
+      "reusable": true,
+      "width": 380,
+      "fill": "$bg-base",
+      "cornerRadius": 20,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$bg-sand"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#2C282510",
+        "offset": {
+          "x": 0,
+          "y": 4
+        },
+        "blur": 24
+      },
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 32,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "es0dH",
+          "name": "cardIcon",
+          "width": 64,
+          "height": 64,
+          "fill": "$bg-cream",
+          "cornerRadius": 100,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "BF9kH",
+              "name": "cardIconInner",
+              "width": 28,
+              "height": 28,
+              "iconFontName": "sparkles",
+              "iconFontFamily": "lucide",
+              "fill": "$brand-gold"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "Day0o",
+          "name": "cardName",
+          "fill": "$text-primary",
+          "content": "Diseño de Cejas con Hilo",
+          "textAlign": "center",
+          "fontFamily": "Playfair Display",
+          "fontSize": 22,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "rQDTl",
+          "name": "cardDesc",
+          "fill": "$text-secondary",
+          "textGrowth": "fixed-width",
+          "width": 300,
+          "content": "Moldeado y diseño profesional de cejas con técnica de hilo.",
+          "lineHeight": 1.5,
+          "textAlign": "center",
+          "fontFamily": "DM Sans",
+          "fontSize": 15,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "JNvc1",
+          "name": "cardPrice",
+          "fill": "$brand-gold",
+          "content": "$150 MXN",
+          "fontFamily": "DM Sans",
+          "fontSize": 18,
+          "fontWeight": "700"
+        },
+        {
+          "id": "FlaoT",
+          "type": "ref",
+          "ref": "R16Ba",
+          "name": "cardCta",
+          "descendants": {
+            "zIbFY": {
+              "content": "Agendar",
+              "fontSize": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "oXiTF",
+      "x": -600,
+      "y": 800,
+      "name": "TestimonialCard",
+      "reusable": true,
+      "width": 500,
+      "fill": "$bg-base",
+      "cornerRadius": 20,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$bg-sand"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#2C282510",
+        "offset": {
+          "x": 0,
+          "y": 4
+        },
+        "blur": 24
+      },
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 40,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "DHFgw",
+          "name": "tStars",
+          "fill": "$brand-gold",
+          "content": "★★★★★",
+          "textAlign": "center",
+          "fontFamily": "DM Sans",
+          "fontSize": 20,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "7mpSX",
+          "name": "tQuote",
+          "fill": "$text-primary",
+          "textGrowth": "fixed-width",
+          "width": 400,
+          "content": "«Excelente servicio, muy profesional y el resultado fue increíble.»",
+          "lineHeight": 1.6,
+          "textAlign": "center",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 1,
+          "id": "giTQu",
+          "name": "tDivider",
+          "fill": "$brand-gold",
+          "width": 40,
+          "height": 2
+        },
+        {
+          "type": "text",
+          "id": "QUhiI",
+          "name": "tName",
+          "fill": "$text-secondary",
+          "content": "— María García",
+          "textAlign": "center",
+          "fontFamily": "DM Sans",
+          "fontSize": 14,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ZICNo",
       "x": 0,
       "y": 0,
-      "name": "Frame",
+      "name": "Sofia Studio - Landing Page v2",
       "clip": true,
-      "width": 800,
-      "height": 600,
-      "fill": "#FFFFFF",
-      "layout": "none"
+      "width": 1440,
+      "fill": "$bg-base",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "hAYCP",
+          "name": "Navbar",
+          "width": "fill_container",
+          "height": 90,
+          "padding": [
+            0,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "jhTzX",
+              "name": "navLogo",
+              "fill": "$text-primary",
+              "content": "Sofia Studio",
+              "fontFamily": "Playfair Display",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "lUnuC",
+              "name": "navLinks",
+              "gap": 44,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "X0y7R",
+                  "name": "nk1",
+                  "fill": "$text-primary",
+                  "content": "Inicio",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "DkB7B",
+                  "name": "nk2",
+                  "fill": "$text-secondary",
+                  "content": "Servicios",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 14,
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "CHQcZ",
+                  "name": "nk3",
+                  "fill": "$text-secondary",
+                  "content": "Nosotros",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 14,
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "bfHNj",
+                  "name": "nk4",
+                  "fill": "$text-secondary",
+                  "content": "Galería",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 14,
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "DMDR4",
+                  "name": "nk5",
+                  "fill": "$text-secondary",
+                  "content": "Contacto",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 14,
+                  "letterSpacing": 0.5
+                }
+              ]
+            },
+            {
+              "id": "gWIZE",
+              "type": "ref",
+              "ref": "R16Ba",
+              "name": "navCta",
+              "descendants": {
+                "zIbFY": {
+                  "content": "Reservar",
+                  "fontSize": 13,
+                  "letterSpacing": 0.5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "2zD0s",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120,
+            0,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ybU2n",
+              "name": "heroTag",
+              "fill": "transparent",
+              "cornerRadius": 100,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$bg-sand"
+              },
+              "padding": [
+                8,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tKdx0",
+                  "name": "heroTagText",
+                  "fill": "$text-secondary",
+                  "content": "ESTÉTICA PROFESIONAL EN MILPA ALTA",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "luyfB",
+              "name": "heroTitleWrap",
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hS336",
+                  "name": "heroT1",
+                  "fill": "$text-primary",
+                  "content": "Tu espacio de",
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 80,
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "662Ob",
+                  "name": "heroT2",
+                  "fill": "$text-primary",
+                  "content": "belleza y bienestar",
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 80,
+                  "letterSpacing": -1,
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "L6Sa5",
+              "name": "heroDesc",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 560,
+              "content": "Descubre un ambiente cálido y profesional donde cada detalle está pensado para realzar tu belleza natural.",
+              "lineHeight": 1.7,
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "sFYhY",
+              "name": "heroBtns",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "Qrizv",
+                  "type": "ref",
+                  "ref": "R16Ba",
+                  "name": "hBtn1",
+                  "descendants": {
+                    "zIbFY": {
+                      "content": "Reserva tu Cita",
+                      "letterSpacing": 0.5
+                    }
+                  }
+                },
+                {
+                  "id": "9yhIe",
+                  "type": "ref",
+                  "ref": "CWRb3",
+                  "name": "hBtn2",
+                  "descendants": {
+                    "E57Si": {
+                      "content": "Conoce más",
+                      "letterSpacing": 0.5
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XUmUS",
+              "name": "hero-image-wrap",
+              "clip": true,
+              "width": "fill_container",
+              "height": 560,
+              "cornerRadius": [
+                24,
+                24,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "54D8I",
+                  "name": "heroImg",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "katerina_bluebird",
+                    "link": "https://unsplash.com/@katerina_bluebird",
+                    "author": "Ekaterina Sinitskaya"
+                  },
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/flagged/photo-1573470176607-59a085303294?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIzNzgwODB8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "layout": "none"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "poIay",
+          "name": "Services",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 72,
+          "padding": 120,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "l9VRD",
+              "name": "servHead",
+              "layout": "vertical",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dnfna",
+                  "name": "servTag",
+                  "fill": "$brand-gold",
+                  "content": "SERVICIOS",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 4
+                },
+                {
+                  "type": "text",
+                  "id": "x1JRb",
+                  "name": "servTitle",
+                  "fill": "$text-primary",
+                  "content": "Lo que hacemos por ti",
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 48
+                },
+                {
+                  "type": "text",
+                  "id": "3JeG7",
+                  "name": "servDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Cada servicio diseñado para realzar tu belleza con los mejores productos y técnicas profesionales.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VayKN",
+              "name": "servGrid",
+              "width": "fill_container",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3w1Kx",
+                  "name": "sc1",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 28,
+                  "padding": [
+                    40,
+                    36
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "959lK",
+                      "name": "sc1Icon",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "$bg-cream",
+                      "cornerRadius": 16,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Ehs0z",
+                          "name": "sc1IconInner",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "scissors",
+                          "iconFontFamily": "lucide",
+                          "fill": "$brand-gold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "7PzdB",
+                      "name": "sc1Name",
+                      "fill": "$text-primary",
+                      "content": "Diseño de Cejas\ncon Hilo",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 24,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "0T3ZF",
+                      "name": "sc1Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Moldeado y diseño profesional de cejas con técnica de hilo para resultados precisos y naturales.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "5idOi",
+                      "name": "sc1Price",
+                      "fill": "$brand-gold",
+                      "content": "Desde $150 MXN",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QbP2e",
+                  "name": "sc2",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 28,
+                  "padding": [
+                    40,
+                    36
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ko4KJ",
+                      "name": "sc2Icon",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "$bg-cream",
+                      "cornerRadius": 16,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "lA8jg",
+                          "name": "sc2IconI",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "sparkles",
+                          "iconFontFamily": "lucide",
+                          "fill": "$brand-gold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "AphQV",
+                      "name": "sc2Name",
+                      "fill": "$text-primary",
+                      "content": "Depilación\nProfesional",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 24,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UAVVp",
+                      "name": "sc2Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Depilación con los mejores productos para una piel suave, cuidada y con resultados duraderos.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vP7DX",
+                      "name": "sc2Price",
+                      "fill": "$brand-gold",
+                      "content": "Desde $200 MXN",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "A9Mfy",
+                  "name": "sc3",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 28,
+                  "padding": [
+                    40,
+                    36
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SDVXD",
+                      "name": "sc3Icon",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "$bg-cream",
+                      "cornerRadius": 16,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "JVwyc",
+                          "name": "sc3IconI",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "palette",
+                          "iconFontFamily": "lucide",
+                          "fill": "$brand-gold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "kRE4l",
+                      "name": "sc3Name",
+                      "fill": "$text-primary",
+                      "content": "Maquillaje\nProfesional",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 24,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "7t4J2",
+                      "name": "sc3Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Maquillaje para todo tipo de evento: bodas, XV años, graduaciones y sesiones fotográficas.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fodG3",
+                      "name": "sc3Price",
+                      "fill": "$brand-gold",
+                      "content": "Desde $500 MXN",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "64utJ",
+          "name": "About",
+          "clip": true,
+          "width": "fill_container",
+          "height": 680,
+          "fill": "$bg-cream",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pJfr2",
+              "name": "aboutImg",
+              "metadata": {
+                "type": "unsplash",
+                "username": "unsplashbydan",
+                "link": "https://unsplash.com/@unsplashbydan",
+                "author": "Daniel"
+              },
+              "clip": true,
+              "width": 720,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1695527081901-b2dd7452cdcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIzNzgxNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "LTTYU",
+              "name": "aboutContent",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 36,
+              "padding": 80,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xO0M3",
+                  "name": "aboutTag",
+                  "fill": "$brand-gold",
+                  "content": "SOBRE NOSOTROS",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 4
+                },
+                {
+                  "type": "text",
+                  "id": "rnnMZ",
+                  "name": "aboutTitle",
+                  "fill": "$text-primary",
+                  "content": "Pasión por realzar\ntu belleza natural",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 42
+                },
+                {
+                  "type": "text",
+                  "id": "u34en",
+                  "name": "aboutDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Sofia Studio 2.0 nació de la pasión por realzar la belleza natural de cada persona. En nuestro espacio en Milpa Alta, CDMX, ofrecemos un ambiente cálido y profesional donde cada cliente se siente única y especial.\n\nCon más de 3 años de experiencia y cientos de clientes satisfechas, nos hemos convertido en el destino de belleza preferido de la zona.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "DM Sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "23LK4",
+                  "name": "aboutStats",
+                  "gap": 48,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IKy3m",
+                      "name": "st1",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1p45L",
+                          "name": "st1N",
+                          "fill": "$brand-gold",
+                          "content": "150+",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 36,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kANRZ",
+                          "name": "st1L",
+                          "fill": "$text-secondary",
+                          "content": "Clientes",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yPL4q",
+                      "name": "st2",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qCroM",
+                          "name": "st2N",
+                          "fill": "$brand-gold",
+                          "content": "3+",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 36,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "54muS",
+                          "name": "st2L",
+                          "fill": "$text-secondary",
+                          "content": "Años",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "5LXtP",
+                      "name": "st3",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "H3Dv0",
+                          "name": "st3N",
+                          "fill": "$brand-gold",
+                          "content": "5.0 ★",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 36,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bJvyK",
+                          "name": "st3L",
+                          "fill": "$text-secondary",
+                          "content": "Rating",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "v86a0",
+          "name": "Gallery",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 60,
+          "padding": 120,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "5jpeV",
+              "name": "gallHead",
+              "layout": "vertical",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FugAJ",
+                  "name": "gallTag",
+                  "fill": "$brand-gold",
+                  "content": "GALERÍA",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 4
+                },
+                {
+                  "type": "text",
+                  "id": "BTK0C",
+                  "name": "gallTitle",
+                  "fill": "$text-primary",
+                  "content": "Nuestro trabajo",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 48
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "6sYsX",
+              "name": "gallGrid",
+              "width": "fill_container",
+              "height": 520,
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Tw87I",
+                  "name": "gallCol1",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Sz8La",
+                      "name": "g1",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "anniespratt",
+                        "link": "https://unsplash.com/@anniespratt",
+                        "author": "Annie Spratt"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1512053566926-1985a171b354?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIzNzgxNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 16,
+                      "layout": "none"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ifzpC",
+                      "name": "g2",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "jaydensimm",
+                        "link": "https://unsplash.com/@jaydensimm",
+                        "author": "Jayden Sim"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1577013371837-d5b3a25db3cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIzNzgxNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 16,
+                      "layout": "none"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "T8C2T",
+                  "name": "gallCol2",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "D52rP",
+                      "name": "g3",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "zahrinlukman",
+                        "link": "https://unsplash.com/@zahrinlukman",
+                        "author": "Zahrin Lukman"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1616529484745-85f885b9889a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIzNzgxNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 16,
+                      "layout": "none"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DPvsd",
+                      "name": "g4",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "draxo6",
+                        "link": "https://unsplash.com/@draxo6",
+                        "author": "dras koli"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1677691257026-62560c7cae99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIzNzgxNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 16,
+                      "layout": "none"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oTvJ8",
+                  "name": "gallCol3",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FHRO1",
+                      "name": "g5",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "stelladelm",
+                        "link": "https://unsplash.com/@stelladelm",
+                        "author": "Stella Ntelimichali"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1601814831603-10706dbdd6f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIzNzgxNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 16,
+                      "layout": "none"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6NXV0",
+                      "name": "g6",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "chapsco",
+                        "link": "https://unsplash.com/@chapsco",
+                        "author": "Chaps & Co"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 240,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1759134155377-4207d89b39ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIzNzgxNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 16,
+                      "layout": "none"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "w7DKJ",
+          "name": "Testimonials",
+          "width": "fill_container",
+          "fill": "$bg-cream",
+          "layout": "vertical",
+          "gap": 60,
+          "padding": 120,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "xAx2V",
+              "name": "testHead",
+              "layout": "vertical",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J0xlC",
+                  "name": "testTag",
+                  "fill": "$brand-gold",
+                  "content": "TESTIMONIOS",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 4
+                },
+                {
+                  "type": "text",
+                  "id": "cTB3L",
+                  "name": "testTitle",
+                  "fill": "$text-primary",
+                  "content": "Lo que dicen nuestras clientas",
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 48
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tEnZt",
+              "name": "testGrid",
+              "width": "fill_container",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gt95d",
+                  "name": "tc1",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": [
+                    48,
+                    40
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BKbQp",
+                      "name": "tc1Stars",
+                      "fill": "$brand-gold",
+                      "content": "★★★★★",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "2VVRb",
+                      "name": "tc1Quote",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "«Excelente servicio, muy profesional y el resultado fue increíble. Salí encantada y todas me preguntaron dónde me había arreglado.»",
+                      "lineHeight": 1.7,
+                      "fontFamily": "DM Sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "TT7Vo",
+                      "name": "tc1Div",
+                      "fill": "$brand-gold",
+                      "width": 32,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "aWnqY",
+                      "name": "tc1Name",
+                      "fill": "$text-primary",
+                      "content": "María García",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fyybm",
+                      "name": "tc1Role",
+                      "fill": "$text-secondary",
+                      "content": "Cliente frecuente",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ELai7",
+                  "name": "tc2",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": [
+                    48,
+                    40
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tElPO",
+                      "name": "tc2Stars",
+                      "fill": "$brand-gold",
+                      "content": "★★★★★",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "8Dtq0",
+                      "name": "tc2Quote",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "«El mejor lugar para diseño de cejas en Milpa Alta. La técnica con hilo es increíble, se nota que son profesionales.»",
+                      "lineHeight": 1.7,
+                      "fontFamily": "DM Sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "lUeNh",
+                      "name": "tc2Div",
+                      "fill": "$brand-gold",
+                      "width": 32,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "bu8Zw",
+                      "name": "tc2Name",
+                      "fill": "$text-primary",
+                      "content": "Ana López",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KTwZ2",
+                      "name": "tc2Role",
+                      "fill": "$text-secondary",
+                      "content": "Primera visita",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BefGH",
+                  "name": "tc3",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": [
+                    48,
+                    40
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pghtv",
+                      "name": "tc3Stars",
+                      "fill": "$brand-gold",
+                      "content": "★★★★★",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "svblr",
+                      "name": "tc3Quote",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "«Me encantó el maquillaje para mi graduación. Quedé perfecta en todas las fotos. Definitivamente regresaré.»",
+                      "lineHeight": 1.7,
+                      "fontFamily": "DM Sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "aYxlE",
+                      "name": "tc3Div",
+                      "fill": "$brand-gold",
+                      "width": 32,
+                      "height": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "QtFFF",
+                      "name": "tc3Name",
+                      "fill": "$text-primary",
+                      "content": "Daniela Martínez",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AArZe",
+                      "name": "tc3Role",
+                      "fill": "$text-secondary",
+                      "content": "Evento especial",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XQfIW",
+          "name": "CTA Section",
+          "width": "fill_container",
+          "fill": "$dark-bg",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": 120,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "FmsTE",
+              "name": "ctaTitle",
+              "fill": "$text-inverse",
+              "content": "¿Lista para verte increíble?",
+              "textAlign": "center",
+              "fontFamily": "Playfair Display",
+              "fontSize": 52,
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "oEOu5",
+              "name": "ctaDesc",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "content": "Agenda tu cita hoy y descubre por qué somos el espacio de belleza preferido en Milpa Alta.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "EEgLj",
+              "name": "ctaBtns",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "hKYZD",
+                  "type": "ref",
+                  "ref": "R16Ba",
+                  "name": "ctaBtn1",
+                  "descendants": {
+                    "zIbFY": {
+                      "content": "Reservar en Fresha",
+                      "letterSpacing": 0.5
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "DQTmY",
+                  "name": "ctaBtn2",
+                  "fill": "transparent",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FAF7F240"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    16,
+                    40
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "D212T",
+                      "name": "ctaWaIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "message-circle",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-inverse"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jtOgg",
+                      "name": "ctaWaText",
+                      "fill": "$text-inverse",
+                      "content": "WhatsApp",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "dDwW2",
+              "name": "ctaPhone",
+              "fill": "$text-secondary",
+              "content": "+52 55 4717 6847",
+              "fontFamily": "DM Sans",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "OQOuU",
+          "name": "Contact",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 60,
+          "padding": 120,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "JI3tk",
+              "name": "contHead",
+              "layout": "vertical",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HRFLB",
+                  "name": "contTag",
+                  "fill": "$brand-gold",
+                  "content": "CONTACTO",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 4
+                },
+                {
+                  "type": "text",
+                  "id": "JAK13",
+                  "name": "contTitle",
+                  "fill": "$text-primary",
+                  "content": "Encuéntranos",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 48
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LXDD1",
+              "name": "contRow",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uHmq2",
+                  "name": "contInfo",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 36,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wIfc1",
+                      "name": "ciAddr",
+                      "width": "fill_container",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "yX2N0",
+                          "name": "ciAddrI",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "$bg-cream",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "q7VWV",
+                              "name": "ciAddrIcon",
+                              "width": 20,
+                              "height": 20,
+                              "iconFontName": "map-pin",
+                              "iconFontFamily": "lucide",
+                              "fill": "$brand-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "iikDq",
+                          "name": "ciAddrT",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xGi4r",
+                              "name": "ciAddrLabel",
+                              "fill": "$text-primary",
+                              "content": "Dirección",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "G2X5G",
+                              "name": "ciAddrVal",
+                              "fill": "$text-secondary",
+                              "content": "Sonora Sur 51, Villa Milpa Alta,\nLos Ángeles, Milpa Alta, 12500, CDMX",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mDtEQ",
+                      "name": "ciPhone",
+                      "width": "fill_container",
+                      "gap": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "4e1TQ",
+                          "name": "ciPhoneI",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "$bg-cream",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "f1dZj",
+                              "name": "ciPhoneIcon",
+                              "width": 20,
+                              "height": 20,
+                              "iconFontName": "phone",
+                              "iconFontFamily": "lucide",
+                              "fill": "$brand-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "4Jl1O",
+                          "name": "ciPhoneT",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ZDRZJ",
+                              "name": "ciPhoneLabel",
+                              "fill": "$text-primary",
+                              "content": "Teléfono",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "cJi5N",
+                              "name": "ciPhoneVal",
+                              "fill": "$text-secondary",
+                              "content": "+52 55 4717 6847",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kRoOz",
+                      "name": "ciHours",
+                      "width": "fill_container",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "uXRMw",
+                          "name": "ciHoursI",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "$bg-cream",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "J6sW3",
+                              "name": "ciHoursIcon",
+                              "width": 20,
+                              "height": 20,
+                              "iconFontName": "calendar",
+                              "iconFontFamily": "lucide",
+                              "fill": "$brand-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "FLoya",
+                          "name": "ciHoursT",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "skqux",
+                              "name": "ciHoursLabel",
+                              "fill": "$text-primary",
+                              "content": "Horario",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "LZmvV",
+                              "name": "ciHoursV1",
+                              "fill": "$text-secondary",
+                              "content": "Lun – Vie: 11:00 AM – 7:00 PM",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "BgwHS",
+                              "name": "ciHoursV2",
+                              "fill": "$text-secondary",
+                              "content": "Sábado: 10:00 AM – 5:00 PM",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "UYGY3",
+                              "name": "ciHoursV3",
+                              "fill": "$text-secondary",
+                              "content": "Domingo: Cerrado",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "83VZO",
+                      "name": "ciSocial",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jmm3D",
+                          "name": "ciIG",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "$bg-cream",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "g99A4",
+                              "name": "ciIGi",
+                              "width": 20,
+                              "height": 20,
+                              "iconFontName": "instagram",
+                              "iconFontFamily": "lucide",
+                              "fill": "$brand-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "RGVV1",
+                          "name": "ciFB",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "$bg-cream",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "9cO7p",
+                              "name": "ciFBi",
+                              "width": 20,
+                              "height": 20,
+                              "iconFontName": "facebook",
+                              "iconFontFamily": "lucide",
+                              "fill": "$brand-gold"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0Y43H",
+                  "name": "mapWrap",
+                  "width": "fill_container",
+                  "height": 420,
+                  "fill": "$bg-cream",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D4C5B030"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4oLEF",
+                      "name": "mapLabel",
+                      "fill": "$text-secondary",
+                      "content": "Google Maps",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TWmfU",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$dark-bg",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "ChXzC",
+              "name": "ftTop",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "0CbOu",
+                  "name": "ftBrand",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SyTfW",
+                      "name": "ftLogo",
+                      "fill": "$text-inverse",
+                      "content": "Sofia Studio",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 24,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "e11Sj",
+                      "name": "ftTagline",
+                      "fill": "#9B959080",
+                      "content": "Tu espacio de belleza y bienestar",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EAhIo",
+                  "name": "ftLinks",
+                  "gap": 72,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "H6TIc",
+                      "name": "ftCol1",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "si8vw",
+                          "name": "ftC1T",
+                          "fill": "$text-inverse",
+                          "content": "Navegación",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "DjfYn",
+                          "name": "ftC1L1",
+                          "fill": "#9B959080",
+                          "content": "Inicio",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "j1d9f",
+                          "name": "ftC1L2",
+                          "fill": "#9B959080",
+                          "content": "Servicios",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Vg1CV",
+                          "name": "ftC1L3",
+                          "fill": "#9B959080",
+                          "content": "Nosotros",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "SG19n",
+                          "name": "ftC1L4",
+                          "fill": "#9B959080",
+                          "content": "Galería",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cmddQ",
+                      "name": "ftCol2",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rzUvR",
+                          "name": "ftC2T",
+                          "fill": "$text-inverse",
+                          "content": "Contacto",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "SCycp",
+                          "name": "ftC2L1",
+                          "fill": "#9B959080",
+                          "content": "+52 55 4717 6847",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dJgvL",
+                          "name": "ftC2L2",
+                          "fill": "#9B959080",
+                          "content": "Instagram",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "79Kjp",
+                          "name": "ftC2L3",
+                          "fill": "#9B959080",
+                          "content": "Facebook",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RDJwl",
+                          "name": "ftC2L4",
+                          "fill": "#9B959080",
+                          "content": "Fresha",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "vHnP0",
+              "name": "ftDiv",
+              "fill": "#FAF7F210",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "jeIib",
+              "name": "ftBottom",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OELz3",
+                  "name": "ftCopy",
+                  "fill": "#9B959060",
+                  "content": "© 2025 Sofia Studio 2.0. Todos los derechos reservados.",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "CJFLk",
+                  "name": "ftMadeWith",
+                  "fill": "#9B959060",
+                  "content": "Hecho con ♥ en Milpa Alta",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "variables": {
+    "bg-base": {
+      "type": "color",
+      "value": "#FAF7F2"
+    },
+    "bg-cream": {
+      "type": "color",
+      "value": "#F0E6D8"
+    },
+    "bg-sand": {
+      "type": "color",
+      "value": "#D4C5B0"
+    },
+    "brand-brass": {
+      "type": "color",
+      "value": "#D4A853"
+    },
+    "brand-gold": {
+      "type": "color",
+      "value": "#C9A96E"
+    },
+    "brand-nude": {
+      "type": "color",
+      "value": "#C4A882"
+    },
+    "brand-wood": {
+      "type": "color",
+      "value": "#B8956A"
+    },
+    "dark-bg": {
+      "type": "color",
+      "value": "#2C2825"
+    },
+    "font-sans": {
+      "type": "string",
+      "value": "DM Sans"
+    },
+    "font-serif": {
+      "type": "string",
+      "value": "Playfair Display"
+    },
+    "glow": {
+      "type": "color",
+      "value": "#FFD5A0"
+    },
+    "overlay-dark": {
+      "type": "color",
+      "value": "#2C282599"
+    },
+    "overlay-light": {
+      "type": "color",
+      "value": "#F0E6D8CC"
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 24
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 16
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "radius-xl": {
+      "type": "number",
+      "value": 32
+    },
+    "text-inverse": {
+      "type": "color",
+      "value": "#FAF7F2"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#2C2825"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#9B9590"
+    },
+    "white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    }
+  }
 }

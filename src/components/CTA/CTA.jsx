@@ -10,13 +10,16 @@ function CTA() {
   const sectionRef = useRef(null)
 
   useGSAP((gsap, ScrollTrigger) => {
-    // Content fade-in
-    gsap.from(sectionRef.current.children, {
+    const children = sectionRef.current?.children
+    if (!children) return
+
+    gsap.from(children, {
       y: 40,
       opacity: 0,
       duration: 0.8,
       stagger: 0.15,
       ease: 'power3.out',
+      clearProps: 'opacity,transform',
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top 85%',

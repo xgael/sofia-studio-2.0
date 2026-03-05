@@ -30,6 +30,7 @@ function Contact() {
       duration: 0.6,
       stagger: 0.12,
       ease: 'power3.out',
+      clearProps: 'opacity,transform',
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top 80%',
@@ -41,6 +42,7 @@ function Contact() {
       opacity: 0,
       duration: 0.8,
       ease: 'power2.out',
+      clearProps: 'opacity',
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top 75%',
